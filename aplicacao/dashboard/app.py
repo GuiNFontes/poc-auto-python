@@ -17,7 +17,7 @@ import plotnine as p9
 
 #importação de dados
 dados = (
-    pd.read_csv("aplicacao/dashboard/dados_disponibilizados.csv")
+    pd.read_csv("dados_disponibilizados.csv")
     .assign(
         data = lambda x: pd.to_datetime(x.data),
         index = lambda x: x.data
@@ -179,12 +179,9 @@ app = App(app_ui, server)
 
 #Deploy para publicação
 #rsconnect deploy shiny /path/to/app --name <NAME> --title my-app
-#rsconnect deploy shiny path/to/your/app --name guinfontes --title your-app-name
 
-#Nesse caso
-#rsconnect deploy shiny . --new --title aula_analisemacro_pad41_macrocopa
-#rsconnect deploy shiny /path/to/app --name <NAME> --title my-app
-#rsconnect deploy shiny . --title aula_analisemacro_pad41_macrocopa
+# Deploy para publicação com poetry
+#poetry run rsconnect deploy shiny aplicacao/dashboard/ --title poc-auto-python
 
 # shiny run --reload
 # rsconnect deploy shiny . --title poc-shiny-python
