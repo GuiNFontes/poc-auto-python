@@ -17,7 +17,7 @@ import plotnine as p9
 
 #importação de dados
 dados = (
-    pd.read_csv("dados/dados.csv")
+    pd.read_csv("aplicacao/dashboard/dados_disponibilizados.csv")
     .assign(
         data = lambda x: pd.to_datetime(x.data),
         index = lambda x: x.data
