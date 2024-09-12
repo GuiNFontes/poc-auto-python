@@ -1,7 +1,7 @@
 {
     "https://api.shinyapps.io": {
         "server_url": "https://api.shinyapps.io",
-        "filename": "/workspaces/poc-auto-python/aplicacao/dashboard",
+        "filename": "/home/runner/work/poc-auto-python/poc-auto-python/aplicacao/dashboard",
         "app_url": "https://guinfontes.shinyapps.io/poc-auto-python/",
         "app_id": 12692302,
         "app_guid": null,
