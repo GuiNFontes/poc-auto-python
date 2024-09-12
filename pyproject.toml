@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pad42-automatizacao2"
+version = "0.1.0"
+description = "\"Projeto de automatização de relatório e dashboard em Python\""
+authors = ["Guilherme <guinfontes@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+plotnine = "^0.13.6"
+python-bcb = "^0.3.0"
+jupyter = "^1.1.1"
+shiny = "^1.1.0"
+dbnomics = "^1.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
