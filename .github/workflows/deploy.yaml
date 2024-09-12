@@ -43,9 +43,9 @@ jobs:
       
       - name: Extração, Transformação, Disponibilização
         run: |
-          poetry run python Python/01_extracao.py
-          poetry run python Python/02_transformacao.py
-          poetry run python Python/03_disponibilizacao.py
+          poetry run python python/01_extracao.py
+          poetry run python python/02_transformacao.py
+          poetry run python python/03_disponibilizacao.py
       
       - name: Publicação da Dashboard Shiny
         run: |
